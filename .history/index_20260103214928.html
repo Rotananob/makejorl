@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMarket - Find Your Dream Car</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Auto<span class="highlight">Market</span></a>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#inventory">Inventory</a></li>
+                <li><a href="#sell">Sell Your Car</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Find the Best Car for You</h1>
+            <p>Browse thousands of cars from trusted dealers and private sellers.</p>
+            <a href="#inventory" class="btn btn-primary">Browse Inventory</a>
+        </div>
+    </header>
+
+    <!-- Search & Filter Section -->
+    <section id="inventory" class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <div class="form-group">
+                    <label for="make">Make</label>
+                    <select id="make">
+                        <option value="all">All Makes</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Ford">Ford</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Tesla">Tesla</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="price">Max Price</label>
+                    <select id="price">
+                        <option value="all">Any Price</option>
+                        <option value="20000">$20,000</option>
+                        <option value="30000">$30,000</option>
+                        <option value="50000">$50,000</option>
+                        <option value="100000">$100,000</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="type">Type</label>
+                    <select id="type">
+                        <option value="all">All Types</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Sedan">Sedan</option>
+                        <option value="Truck">Truck</option>
+                        <option value="Coupe">Coupe</option>
+                    </select>
+                </div>
+                <button id="filter-btn" class="btn btn-secondary">Filter</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Listings -->
+    <section class="listings">
+        <div class="container">
+            <h2>Featured Cars</h2>
+            <div id="car-grid" class="car-grid">
+                <!-- Car cards will be injected here by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sell Your Car Section -->
+    <section id="sell" class="sell-section">
+        <div class="container">
+            <div class="sell-content">
+                <h2>Want to Sell Your Car?</h2>
+                <p>Get the best value for your vehicle. List it on AutoMarket today.</p>
+                <button class="btn btn-primary">List Your Car</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>AutoMarket</h3>
+                    <p>The best place to buy and sell cars online.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p>Email: support@automarket.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AutoMarket. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
